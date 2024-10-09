@@ -7,9 +7,58 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Welcome to the Surfboard Selector</h1>
+    <h1>AI Surfboard Selector 🏄</h1>
     <h2>Want to find out which board is best for you?</h2>
+    <main>
+      <form id="surfboard-form">
+        <label for="skill-level">What is your skill level</label>
+        <select id="skill-level" autofocus>
+          <option value="" selected>Select one..</option>
+          <option value="begginer">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+          <option value="expert">Expert</option>
+        </select>
 
+        <label for="height">What is your height? (cm)</label>
+        <input
+          type="number"
+          id="height"
+          placeholder="e.g. 168 (cm)"
+          autofocus
+          required
+        />
+
+        <label for="weight">What is your weight? (kg)</label>
+        <input
+          type="number"
+          id="weight"
+          placeholder="e.g. 65(kg)"
+          autofocus
+          required
+        />
+
+        <label for="wave-conditions">Typical wave conditions:</label>
+        <select id="wave-conditions" autofocus>
+          <option value="" selected>Select one..</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="mushy">Mushy</option>
+          <option value="steep">Steep</option>
+        </select>
+
+        <label for="surf-style">What is your surf style?</label>
+        <select id="surf-style" autofocus></select>
+        <option value="">Select one..</option>
+        <option value="casual">Casual</option>
+        <option value="agressive">Aggressive</option>
+        <option value="performance">Performance-oriented</option>
+      </form>
+
+      <button id="display-result">🏄‍♀️ Know your board 🏄‍♂️</button>
+      <div id="result">Display the result here</div>
+    </main>
     <footer>
       This project was coded by
       <a href="https://github.com/sofia-pastor" target="_blank"

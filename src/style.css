@@ -1,8 +1,87 @@
 body {
-  background-color: aquamarine;
+  background-image: url(wave-tube.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 75, 76);
+  color: rgb(174, 202, 228);
+  font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2 {
+.container {
+  background-color: rgba(0, 75, 76, 0.5);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+header {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: -20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+  padding: 15px;
+}
+
+.skill-select,
+.height-input,
+.weight-input,
+.waves-select,
+.style-select {
+  padding: 14px;
+  border: 1px solid rgb(174, 202, 228);
+  font-size: 14px;
+  color: rgb(48, 91, 130);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.skill-label,
+.height-label,
+.weight-label,
+.waves-label,
+.style-label {
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgb(0, 143, 178);
+  border: 1px solid rgb(174, 202, 228);
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 2px 5px rgb(174, 202, 228);
+}
+
+button:hover {
+  background-color: rgb(4, 102, 126);
+  cursor: pointer;
+  box-shadow: none;
+}
+
+footer {
+  font-size: 14px;
+  margin-top: 45px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(0, 143, 178);
 }

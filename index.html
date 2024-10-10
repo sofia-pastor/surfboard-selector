@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Surfboard Selector</title>
   </head>
   <body>
@@ -19,12 +20,13 @@
         <h1>AI Surfboard Selector 🏄</h1>
         <h2>Want to find out which board is best for you?</h2>
       </header>
+      <img src="" id="imgDisplay" class="imgDisplay" alt="" />
       <main id="content">
         <form id="surfboard-form" class="surfboard-form">
           <label for="skill-level" class="skill-label"
             >Enter your skill level:</label
           >
-          <select id="skill-level" class="skill-select" autofocus>
+          <select id="skill-level" class="skill-select" autofocus required>
             <option value="" selected>Select one..</option>
             <option value="begginer">Beginner</option>
             <option value="intermediate">Intermediate</option>
@@ -59,7 +61,7 @@
           <label for="wave-conditions" class="waves-label"
             >Typical wave conditions:</label
           >
-          <select id="wave-conditions" class="waves-select" autofocus>
+          <select id="wave-conditions" class="waves-select" autofocus required>
             <option value="" selected>Select one..</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
@@ -71,7 +73,7 @@
           <label for="surf-style" class="style-label"
             >What is your surf style?</label
           >
-          <select id="surf-style" class="style-select" autofocus>
+          <select id="surf-style" class="style-select" autofocus required>
             <option value="">Select one..</option>
             <option value="casual">Casual</option>
             <option value="agressive">Aggressive</option>
